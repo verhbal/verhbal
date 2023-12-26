@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="card">
+ <div class="header" onclick="openClose()">
+    <h2>Click This</h2>
+ </div>
+ <div class="content" id="content">
+    <p>Congratulations on your birthday! I hope you have a great day.</p>
+    <div class="image">🎂</div>
+ </div>
+</div>
+<script>
+    function openClose() {
+ var content = document.getElementById("content");
+ if (content.style.display === "none") {
+    content.style.display = "block";
+ } else {
+    content.style.display = "none";
+ }
+}
+   </script>
+</body>
+</html>
